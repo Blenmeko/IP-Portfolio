@@ -18,6 +18,17 @@
 title="Blen Mekonnen" width="200" height="200">
     <p>Software Engineering student at Addis Ababa Science and Technology University.</p>
     <nav>
+               <button type="button"
+onclick="document.getElementById('hireDialog').showModal()">Hire me</button>
+<dialog id="hireDialog">
+<h2>Available for internships</h2>
+<p>I am available for internships and freelance web projects anytime.</p>
+<p><a href="#contact">Send me a message</a> or <a href="files/cv.pdf"
+download>download my CV</a>.</p>
+<button type="button"
+
+onclick="document.getElementById('hireDialog').close()">Close</button>
+</dialog> <br><br>
 <a href="#about">About</a> |
 <a href="#skills">Skills</a> |
 <a href="#projects">Projects</a> |
@@ -82,7 +93,24 @@ title="Blen Mekonnen" width="200" height="200">
         </ul> 
     </li>
 </ul>
- 
+ <h3>Skill Levels</h3>
+<p>
+<label for="lvl-html">HTML</label>
+<meter id="lvl-html" value="0.4" min="0" max="1">40%</meter>
+</p>
+<p>
+<label for="lvl-python">Python</label>
+<meter id="lvl-python" value="0.3" min="0" max="1">30%</meter>
+</p>
+<p>
+<label for="lvl-js">JavaScript</label>
+<meter id="lvl-js" value="0.2" min="0" max="1" low="0.3" high="0.7"
+optimum="1">20%</meter>
+</p>
+<p>
+    <label for="lvl-powerapps">Power Apps</label>
+    <meter id="lvl-powerapps" value="0.8" min="0" max="1">80%</meter>
+</p>
 <h3>My Learning Roadmap</h3>
 
 <ol type="1">
@@ -145,6 +173,10 @@ title="Blen Mekonnen" width="200" height="200">
     <h2>Education</h2>
     <h3>BSc in Software Engineering</h3>
     <p>Addis Ababa Science and Technology University (AASTU)</p>
+    <p>
+    <label for="degree">Degree progress:</label>
+    <progress id="degree" value="45" max="100">45%</progress> 45%
+    </p>
     <table border="1" cellpadding="8" cellspacing="0"> 
     <caption>Academic Record — BSc in Software Engineering</caption> 
     <thead> 
@@ -206,7 +238,7 @@ title="Blen Mekonnen" width="200" height="200">
     <h2>Contact</h2>
     <p>Address:<br>Addis Ababa<br>Ethiopia</p>
 <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.940058128082!2d38.80975339999999!3d8.8851654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b82a7e392203f%3A0xb05f440eacc98f9f!2sAddis%20Ababa%20Science%20and%20Technology%20University!5e0!3m2!1sen!2set!4v1793830234553!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.940058128082!2d38.80975339999999!3d8.8851654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b82a7e392203f%3A0xb05f440eacc98f9f!2sAddis%20Ababa%20Science%20and%20Technology%20University!5e0!3m2!1sen!2set!4v1793830234553!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
     width="600"
     height="450"
     style="border:0;"
