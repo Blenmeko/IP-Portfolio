@@ -13,6 +13,9 @@
 
 <body>
     <header>
+        <canvas id="logo" width="120" height="120">
+    Blen Mekonnen logo
+</canvas>
     <h1>Blen Mekonnen Taffa</h1>
     <img src="images/me-ai.png" alt="Portrait of Blen."
 title="Blen Mekonnen" width="200" height="200">
@@ -115,6 +118,9 @@ optimum="1">20%</meter>
     <label for="lvl-powerapps">Power Apps</label>
     <meter id="lvl-powerapps" value="0.8" min="0" max="1">80%</meter>
 </p>
+<canvas id="skillChart" width="300" height="150">
+    Bar chart showing my skill levels
+</canvas>
 <h3>My Learning Roadmap</h3>
 
 <ol type="1">
@@ -350,6 +356,40 @@ href="https://linkedin.com/in/blen-mekonnen-2a811a419">linkedin.com/in/Blenmekon
     <time datetime="2026-11-05">5 November 2026</time>
 </p>
 </footer> 
+<script>
+const canvas = document.getElementById('logo');
+const ctx = canvas.getContext('2d');
+
+// Blue square background
+ctx.fillStyle = "#F5B3A0";
+ctx.fillRect(0, 0, 120, 120);
+// White circle
+ctx.beginPath();
+ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+// Initials in the middle
+ctx.fillStyle = "#000000";
+ctx.font = "bold 36px 'Monotype Corsiva'";
+ctx.textAlign = "center";
+ctx.textBaseline = "middle";
+ctx.fillText("BM", 60, 62);
+const chart = document.getElementById('skillChart');
+const chartctx = chart.getContext('2d');
+chartctx.fillStyle = "#C76F55";
+chartctx.fillRect(25, 82, 35, 48);
+chartctx.fillRect(95, 94, 35, 36);
+chartctx.fillRect(165, 106, 35, 24);
+chartctx.fillRect(235, 34, 35, 96);
+chartctx.fillStyle = "#000000";
+chartctx.font = "12px Arial";
+chartctx.textAlign = "center";
+
+chartctx.fillText("HTML", 42, 145);
+chartctx.fillText("Python", 112, 145);
+chartctx.fillText("JavaScript", 182, 145);
+chartctx.fillText("Power Apps", 252, 145);
+</script>
 </body>
 
 </html>
