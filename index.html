@@ -31,14 +31,25 @@ title="Blen Mekonnen" width="200" height="200">
     <h2>About Me</h2>
     <p>I am a 3<sup>rd</sup> year <strong>Software Engineering</strong> student who <em>really</em> enjoys learning new technologies and building projects.<mark> I am still growing my programming skills and exploring different areas of software development</mark>.</p>
     <p>Fun fact: I drink 4 litres of H<sub>2</sub>O while coding every day.</p>
-    <hr>
+    <h3>Hear my introduction</h3>
+    <audio controls>
+    <source src="media/intro.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
     </section>
     <aside>
     <h2>What Inspires Me</h2>
     <blockquote>You don't have to see the whole staircase, just take the first step.</blockquote>
     <p> A teacher of mine used to always say <q>mistakes are lessons in disgise</q>, so i have never been scared of making mistakes.</p>
     <p> The book <cite>Automate the Boring Stuff with Python</cite> by Al Sweigart, is one of the best fun and educational books about coding out there.</p>
-    <hr>
+    <h3>A Talk That Inspires Me</h3>
+     <iframe
+       width="560"
+       height="315"
+       src="https://www.youtube.com/embed/w4rG5GY9IlA"
+       title="Learning Software Engineering During the Era of AI"
+        allowfullscreen>
+     </iframe>
    </aside>
   
    <section id="skills">
@@ -95,7 +106,6 @@ title="Blen Mekonnen" width="200" height="200">
     <dd>Tracks changes to my code and stores my projects online.</dd>
  </dl>
 
- <hr>
 </section> 
   <section id="projects">
     <h2>Projects</h2>
@@ -130,7 +140,6 @@ title="Blen Mekonnen" width="200" height="200">
        <p>Of course it errored, but I wrote it anyway.</p>
        </article>
     <p><a href="projects.html">See all my projects →</a></p>
-    <hr>
     </section>
     <section id="education">
     <h2>Education</h2>
@@ -192,11 +201,19 @@ title="Blen Mekonnen" width="200" height="200">
         </tr> 
 </tfoot> 
 </table>
-    <hr>
     </section>
     <section id="contact">
     <h2>Contact</h2>
-    <p>Address:<br>Oromia<br>Ethiopia</p>
+    <p>Address:<br>Addis Ababa<br>Ethiopia</p>
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.940058128082!2d38.80975339999999!3d8.8851654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b82a7e392203f%3A0xb05f440eacc98f9f!2sAddis%20Ababa%20Science%20and%20Technology%20University!5e0!3m2!1sen!2set!4v1793830234553!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    width="600"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    title="Map showing Addis Ababa Science and Technology University">
+</iframe>
 <p>Email: <a href="mailto:blenmekonnen03@gmail.com">blenmekonnen03@gmail.com</a></p>
 <p>Phone: <a href="tel:+251904148589">+251904148589</a></p>
 <p>GitHub: <a href="https://github.com/Blenmeko">https://github.com/Blenmeko</a></p>
@@ -225,19 +242,42 @@ href="https://linkedin.com/in/blen-mekonnen-2a811a419">linkedin.com/in/Blenmekon
           alt="Email">
 </map>
 <h3>Send me a message</h3> 
-<form action="thank-you.html" method="get"> 
+<form action="thank-you.html" method="post" enctype="multipart/form-data" >
  <fieldset> 
  <legend>Your Details</legend> 
  <label for="fullname">Full name:</label> 
- <input type="text" id="fullname" name="fullname"> 
+ <input type="text" id="fullname" name="fullname" required> 
  <br><br> 
  <label for="email">Email:</label> 
- <input type="email" id="email" name="email"> 
+ <input type="email" id="email" name="email" required> 
+ </fieldset>
+  <fieldset> 
+ <legend>Project Details</legend> 
+ <label for="phone">Phone (optional):</label> 
+ <input type="text" id="phone" name="phone" 
+ pattern="0[79][0-9]{8}" title="10 digits starting with 09 or 07">  <br><br> 
+ <p>Preferred contact method:</p> 
+ <input type="radio" id="by-email" name="contact-method" value="email" checked>  <label for="by-email">Email</label> 
+ <input type="radio" id="by-phone" name="contact-method" value="phone">  <label for="by-phone">Phone</label> 
+ <br><br> 
+ <label for="meeting">Preferred meeting date:</label> 
+ <input type="date" id="meeting" name="meeting" min="2026-11-01">  <br><br> 
+ <label for="weeks">Project length (weeks):</label> 
+ <input type="number" id="weeks" name="weeks" min="1" max="52" step="1">  <br><br> 
+ <label for="brief">Attach a project brief:</label> 
+ <input type="file" id="brief" name="brief"> 
+ <br><br> 
+ <label for="colour">Preferred website colour:</label> 
+ <input type="color" id="colour" name="colour" value="#1f5fa8">  <br><br> 
+ <label for="rating">How much do you like my portfolio? (1–10)</label>  <input type="range" id="rating" name="rating" min="1" max="10" value="7"> 
+ <br><br>
+ <label for="budget">Your budget(ETB):</label>
+ <input type="number" id ="budget" name="budget" min="1000" step="500">
  </fieldset> 
  <fieldset> 
  <legend>Your Message</legend> 
  <label for="reason">Reason for contacting me:</label> 
- <select id="reason" name="reason"> 
+ <select id="reason" name="reason" required> 
  <optgroup label="Work"> 
     <option value="internship">Internship offer</option> 
     <option value="freelance">Freelance project</option> 
@@ -251,7 +291,11 @@ href="https://linkedin.com/in/blen-mekonnen-2a811a419">linkedin.com/in/Blenmekon
  </select> 
  <br><br> 
  <label for="message">Message:</label><br> 
- <textarea id="message" name="message" rows="6" cols="40"></textarea> 
+ <textarea id="message" name="message" rows="6" cols="40"required></textarea> 
+ <br> 
+<input type="checkbox" id="copy" name="copy" value="yes"> 
+<label for="copy">Send me a copy of this message</label> 
+
 </fieldset>
 <button type="submit">Send Message</button> 
 <button type="reset">Clear</button>

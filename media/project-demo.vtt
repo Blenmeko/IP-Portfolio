@@ -1,13 +1,43 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:03.000
-This is my Simple Calculator, written in Python.
+00:00:00.000 --> 00:00:17.000
+The user can filter using Description, Avalibility, Category, and Owner.
+"Clear filters" removes all filters done at once.
 
-00:00:03.000 --> 00:00:06.000
-I enter the first number, 12, and the operator +.
+00:00:18.000 --> 00:00:29.000
+When The user goes to the Card view, The user get items grouped by the parent category.
 
-00:00:06.000 --> 00:00:09.000
-Then I enter the second number, 30.
+00:00:29.100 --> 00:00:38.100
+The arrow on the right corner of the card lists out all the items under that group.
 
-00:00:09.000 --> 00:00:12.000
-The program prints the result: 42.
+00:00:39.150 --> 00:01:00.000
+The user can filter using Description, Reservation start and end date, and Category.
+Same as before "Clear filters" removes all filters at once.
+
+00:01:20.000 --> 00:01:27.200
+The user can add items by clicking the "Add items" button. It takes us to this page.
+
+00:01:28.250 --> 00:01:50.250
+The user must then fill out all the required details.
+Then click on "Submit".
+
+00:02:16.300 --> 00:02:26.300
+The system will redirect us back to the list card page and send a 
+success notification if the item has been added successfully, a failed notification if not.
+
+00:02:27.350 --> 00:02:35.350
+If successful, the user can now see the item they added in this page.
+They can also find it through filtering.
+
+00:02:44.400 --> 00:02:50.400
+If The user clicks on the item, they are directed to the "Item Details" page.
+
+00:02:42.450 --> 00:02:55.450
+Every detail added by the user is then displayed here.
+
+00:03:07.500 --> 00:03:10.500
+The color changes depending on the availbility status.
+
+00:03:17.500 --> 00:03:24.000
+This concludes my demo.
+ThankYou!
